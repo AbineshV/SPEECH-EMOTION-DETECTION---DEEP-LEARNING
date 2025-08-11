@@ -8,7 +8,9 @@ It achieves 77.03% accuracy on the RAVDESS dataset using speaker-independent eva
 Multi-channel input:
 
 Channel 1: Spectrogram
+
 Channel 2: MFCCs
+
 Channel 3: Composite features (Zero Crossing Rate, RMS Energy, Chroma)
 
 Modified Xception architecture: Retains entry & middle flows; removes exit flow for better speech feature extraction.
@@ -30,9 +32,13 @@ Dataset: RAVDESS
 
 📊 Results
 Model	Classifier	Accuracy
+
 Xception	MLP	77.03%
+
 Xception	SVM	66.76%
+
 AlexNet	MLP	72.88%
+
 AlexNet	SVM	56.08%
 
 Xception + MLP achieved the best performance.
@@ -41,11 +47,17 @@ Multi-channel input & GeM pooling significantly improved classification of simil
 
 📌 Future Work
 Integration with real-time SER for voice assistants.
+
 Explore attention mechanisms for improved feature focus.
+
 Expand to multilingual emotion recognition.
 
 👨‍💻 Authors
+
 V Abinesh
+
 R T Surya
+
 G V Hariharan
+
 (School of Electronics Engineering, VIT Chennai)
