@@ -1,63 +1,68 @@
 # SPEECH-EMOTION-DETECTION---DEEP-LEARNING
 
 📌 Overview
-This project presents a Speech Emotion Recognition (SER) system that converts audio signals into multi-channel visual representations (spectrograms, MFCCs, and composite acoustic features) and applies a modified Xception deep learning architecture for emotion classification.
-It achieves 77.03% accuracy on the RAVDESS dataset using speaker-independent evaluation (Leave-One-Speaker-Out cross-validation).
+
+   This project presents a Speech Emotion Recognition (SER) system that converts audio signals into multi-channel visual representations (spectrograms, MFCCs, and composite     acoustic features) and applies a modified Xception deep learning architecture for emotion classification.
+   It achieves 77.03% accuracy on the RAVDESS dataset using speaker-independent evaluation (Leave-One-Speaker-Out cross-validation).
 
 🎯 Key Features
-Multi-channel input:
 
-Channel 1: Spectrogram
+   Multi-channel input:
 
-Channel 2: MFCCs
+   Channel 1: Spectrogram
 
-Channel 3: Composite features (Zero Crossing Rate, RMS Energy, Chroma)
+   Channel 2: MFCCs
 
-Modified Xception architecture: Retains entry & middle flows; removes exit flow for better speech feature extraction.
+   Channel 3: Composite features (Zero Crossing Rate, RMS Energy, Chroma)
 
-Generalized Mean (GeM) pooling: Learns optimal pooling strategy to preserve discriminative features.
+   Modified Xception architecture: Retains entry & middle flows; removes exit flow for better speech feature extraction.
+ 
+   Generalized Mean (GeM) pooling: Learns optimal pooling strategy to preserve discriminative features.
 
-Data augmentation: Noise addition, time stretching, time shifting, and pitch shifting for robust generalization.
+   Data augmentation: Noise addition, time stretching, time shifting, and pitch shifting for robust generalization.
 
-Evaluation strategy: Leave-One-Speaker-Out (LOSO) cross-validation for true speaker independence.
+   Evaluation strategy: Leave-One-Speaker-Out (LOSO) cross-validation for true speaker independence.
 
 🛠 Tech Stack
-Language: Python
 
-Frameworks: TensorFlow / Keras
+   Language: Python
 
-Libraries: NumPy, Librosa, Matplotlib, Scikit-learn
+   Frameworks: TensorFlow / Keras
 
-Dataset: RAVDESS
+   Libraries: NumPy, Librosa, Matplotlib, Scikit-learn
+
+   Dataset: RAVDESS
 
 📊 Results
-Model	Classifier	Accuracy
 
-Xception	MLP	77.03%
+   Model	Classifier	Accuracy
 
-Xception	SVM	66.76%
+   Xception	MLP	77.03%
 
-AlexNet	MLP	72.88%
+   Xception	SVM	66.76%
 
-AlexNet	SVM	56.08%
+   AlexNet	MLP	72.88%
 
-Xception + MLP achieved the best performance.
+   AlexNet	SVM	56.08%
 
-Multi-channel input & GeM pooling significantly improved classification of similar emotions.
+   Xception + MLP achieved the best performance.
+
+   Multi-channel input & GeM pooling significantly improved classification of similar emotions.
 
 📌 Future Work
-Integration with real-time SER for voice assistants.
 
-Explore attention mechanisms for improved feature focus.
+   Integration with real-time SER for voice assistants.
 
-Expand to multilingual emotion recognition.
+   Explore attention mechanisms for improved feature focus.
+
+   Expand to multilingual emotion recognition.
 
 👨‍💻 Authors
 
-V Abinesh
+   V Abinesh
 
-R T Surya
+   R T Surya
 
-G V Hariharan
+   G V Hariharan
 
-(School of Electronics Engineering, VIT Chennai)
+   (School of Electronics Engineering, VIT Chennai)
