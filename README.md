@@ -1,4 +1,4 @@
-# SPEECH-EMOTION-DETECTION---DEEP-LEARNING
+# Speech Emotion Recognition Using Multi-Channel Audio Spectrograms and Image-Based Deep Learning
 
 📌 Overview
 
